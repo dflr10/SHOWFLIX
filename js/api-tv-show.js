@@ -31,7 +31,7 @@ d.addEventListener("keypress", async (e) => {
             let cutSummary = $template.querySelector("div").content;
             $template.querySelector("img").src = el.show.image
               ? el.show.image.medium
-              : "http://static.tvmaze.com/images/no-img/no-img-portrait-text.png";
+              : "https://static.tvmaze.com/images/no-img/no-img-portrait-text.png";
             $template.querySelector("img").alt = el.show.name;
             $template.querySelector("a").href = el.show.url ? el.show.url : "#";
             $template.querySelector("a").target = el.show.url
