@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWFLIX</title>
+    <link rel="icon" href="assets/ico.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1 class="a">SHOWFLIX</h1>
+            <div class="box">
+                <div class="container-1">
+                    <input class="b" type="search" id="search" placeholder="Search..." autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="shows" class="grid-fluid"></section>
+        <template id="show-template">
+            <article class="show">
+                <img>
+                <h3></h3>
+                <div class="content"></div>
+                <a></a>
+            </article>
+        </template>
+    </main>
+    <footer class="footer container">
+        <span>Developed by Daniel Lozada 2021. This website uses the TVZAME-API</span>
+    </footer>
+
+
+    <script src="js/api-tv-show.js"></script>
+</body>
+
+</html>
