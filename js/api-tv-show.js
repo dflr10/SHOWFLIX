@@ -20,6 +20,10 @@ d.addEventListener("keypress", async (e) => {
 
         if (json.length === 0) {
           $shows.innerHTML = `<h2>No results found search for: <mark>${query}</mark></h2>`;
+          setTimeout(() => {
+            $shows.innerHTML = "";
+            d.getElementById("search").value = "";
+          }, 2500);
         } else {
           json.forEach((el) => {
             $template.querySelector("h3").textContent = el.show.name;
