@@ -1,4 +1,5 @@
 const d = document,
+  w=window,
   $shows = d.getElementById("shows"),
   $template = d.getElementById("show-template").content,
   $fragment = d.createDocumentFragment();
@@ -54,4 +55,8 @@ d.addEventListener("keypress", async (e) => {
       }
     }
   }
+    w.scrollTo({
+    top: 177,
+    left: 0,
+  });
 });
