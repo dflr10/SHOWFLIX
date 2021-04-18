@@ -47,6 +47,10 @@ d.addEventListener("keypress", async (e) => {
           });
           $shows.innerHTML = "";
           $shows.appendChild($fragment);
+          w.scrollTo({
+            top: 177,
+            left: 0,
+          });
         }
       } catch (error) {
         console.log(error);
@@ -55,8 +59,4 @@ d.addEventListener("keypress", async (e) => {
       }
     }
   }
-    w.scrollTo({
-    top: 177,
-    left: 0,
-  });
 });
