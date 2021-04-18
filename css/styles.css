@@ -5,6 +5,8 @@ html {
   background-color: black;
   color: #63717f;
   text-align: center;
+  scroll-behavior: smooth;
+
 }
 
 main {
