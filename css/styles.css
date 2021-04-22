@@ -6,16 +6,30 @@ html {
   color: #63717f;
   text-align: center;
   scroll-behavior: smooth;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-  min-height: calc(100vh - 220px);
+  /* min-height: calc(100vh - 220px); */
+  flex-grow: 1;
 }
 
 h1 {
   -webkit-text-stroke: 0.5px red;
   color: red;
+  flex: 0 1 auto;
 }
 
 p,
@@ -99,19 +113,27 @@ input[type="search"] {
 }
 
 .container {
-  max-width: 992px;
-  margin: auto;
+  padding: 20px;
+}
+
+@media (min-width: 481px) and (max-width: 812px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
   h1 {
     text-align: left;
     display: block;
-    font-size: 40px;
     -webkit-text-stroke: 0px red;
   }
 
   .wrapper {
+    margin-top: 10px;
     display: block;
   }
 

@@ -1,5 +1,5 @@
 const d = document,
-  w=window,
+  w = window,
   $shows = d.getElementById("shows"),
   $template = d.getElementById("show-template").content,
   $fragment = d.createDocumentFragment();
@@ -20,10 +20,10 @@ d.addEventListener("keypress", async (e) => {
 
         if (json.length === 0) {
           $shows.innerHTML = `<h2>No results found search for: <mark>${query}</mark></h2>`;
+          d.getElementById("search").value = "";
           setTimeout(() => {
             $shows.innerHTML = "";
-            d.getElementById("search").value = "";
-          }, 2500);
+          }, 1000);
         } else {
           json.forEach((el) => {
             $template.querySelector("h3").textContent = el.show.name;
