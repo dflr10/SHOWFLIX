@@ -101,7 +101,7 @@ input[type="search"] {
   background: #2b303b;
   border: none;
   border-radius: 5px;
-  font-size: 16pt;
+  font-size: 18pt;
   color: #63717f;
   padding-left: 25px;
   -webkit-border-radius: 5px;
@@ -113,12 +113,16 @@ input[type="search"] {
 }
 
 .container {
+  font-size: 20px;
   padding: 20px;
 }
 
 @media (min-width: 481px) and (max-width: 812px) {
   html {
     font-size: 20px;
+  }
+  .container {
+    font-size: 16px;
   }
 }
 
@@ -140,5 +144,8 @@ input[type="search"] {
   .container-1 input#search {
     display: block;
     margin: 20px 10px;
+  }
+  .container {
+    font-size: 14px;
   }
 }
