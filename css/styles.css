@@ -22,7 +22,6 @@ body {
 }
 
 main {
-  /* min-height: calc(100vh - 220px); */
   flex-grow: 1;
 }
 
