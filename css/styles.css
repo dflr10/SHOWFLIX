@@ -27,6 +27,7 @@ main {
 
 h1 {
   -webkit-text-stroke: 0.5px red;
+
   color: red;
   flex: 0 1 auto;
 }
@@ -78,9 +79,10 @@ input[type="search"] {
   border-color: #fc5776;
   border-radius: 8px;
   height: 40px;
-  width: 1000%;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
+  outline: 0;
 }
 
 .grid-fluid {
